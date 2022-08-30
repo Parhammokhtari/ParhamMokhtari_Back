@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sample CRUD</title>
+    <link href="Assets/css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Create</div>
+      <form action="http://localhost/CRUD_Sample/createUser" method="post">
+        <label
+          >First Name:
+          <input required="required" name="firstName" type="text" />
+        </label>
+        <label
+          >Last Name:
+          <input required="required" name="lastName" type="text" />
+        </label>
+        <label
+          >Username:
+          <input required="required" name="username" type="text" />
+        </label>
+
+        <label
+          >Password:
+          <input required="required" name="password" type="password" />
+        </label>
+
+        <button type="submit" name="create">Create!</button>
+      </form>
+    </div>
+    <div class="container">
+      <div class="title">Read</div>
+      <form action="http://localhost/CRUD_Sample/read" method="get">
+        <label
+          >Person ID:
+          <input name="id" type="text" />
+        </label>
+        <button type="submit" name="read">Get</button>
+      </form>
+      <hr />
+      <div class="title">Read All</div>
+      <form action="http://localhost/CRUD_Sample/read_all" method="get">
+        <button type="submit">Get All</button>
+      </form>
+    </div>
+    <div class="container">
+      <div class="title">Update</div>
+      <form action="http://localhost/CRUD_Sample/update" method="post">
+        <label
+          >First Name:
+          <input name="firstName" type="text" />
+        </label>
+        <label
+          >Last Name:
+          <input name="lastName" type="text" />
+        </label>
+        <label
+          >Username:
+          <input required="required" name="username" type="text" />
+        </label>
+        <button type="submit" name="update">Update</button>
+      </form>
+    </div>
+    <div class="container">
+      <div class="title">Delete</div>
+      <form action="http://localhost/CRUD_Sample/delete" method="post">
+        <label
+          >Username:
+          <input required="required" name="username" type="text" />
+        </label>
+        <button type="submit" name="delete">Delete</button>
+      </form>
+    </div>
+  </body>
+</html>
